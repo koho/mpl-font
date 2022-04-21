@@ -1,10 +1,5 @@
-import os
+from mpl_font import set_font
 
-from mpl_font import apply_font
+set = lambda: set_font('WenQuanYi Micro Hei', 'wqy')
 
-FONT_NAME = 'WenQuanYi Micro Hei'
-
-def set():
-  apply_font(os.path.join(os.path.dirname(__file__), 'fonts', 'wqy'), FONT_NAME)
-  
 set()
